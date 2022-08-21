@@ -1,0 +1,454 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(29, 29, 29);
+    background-color: #fff;
+}
+
+
+/*-------Reusable code-----------*/
+
+section {
+    margin: 90px 0;
+}
+
+h2 {
+    font-size: 45px;
+    margin-bottom: 18px;
+    text-align: center;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+}
+
+
+/*-------Header Section-----------*/
+
+header {
+    background-image: linear-gradient(rgba(2, 7, 44, 0.6), rgb(2, 7, 44, 0.6)), url(background-img.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.logo-nav {
+    padding-top: 30px;
+}
+
+.header-logo {
+    padding-left: 50px;
+    display: inline;
+}
+
+.header-logo a {
+    font-size: 40px;
+    text-decoration: none;
+    color: rgb(254, 47, 47);
+    vertical-align: middle;
+}
+
+.header-logo h1 {
+    display: inline-block;
+    font-size: 20px;
+    vertical-align: middle;
+    color: #fff;
+}
+
+.nav-part {
+    position: absolute;
+    top: 40px;
+    right: 100px;
+}
+
+.nav-part li {
+    float: left;
+    list-style: none;
+    margin-left: 30px;
+}
+
+.nav-part li a:link,
+.nav-part li a:visited {
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    border-bottom: transparent;
+    padding: 0 5px;
+    padding-bottom: 5px;
+    transition: border-bottom 0.2s;
+}
+
+.nav-part li a:hover,
+.nav-part li a:active {
+    border-bottom: rgb(254, 47, 47) solid 3px;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.hero-text h1 {
+    font-size: 60px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.hero-text p {
+    font-size: 20px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    margin-top: 50px;
+    margin-bottom: 95px;
+    font-weight: 200;
+}
+
+.hero-text a:link,
+.hero-text a:visited {
+    text-decoration: none;
+    color: #fff;
+    margin-top: 45px;
+    border: transparent;
+    padding: 15px 40px;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: rgb(254, 47, 47);
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.hero-text a:hover,
+.hero-text a:active {
+    color: rgb(254, 47, 47);
+    background-color: rgb(255, 255, 255);
+}
+
+
+/*------------Courses Section--------------*/
+
+.Course-section {
+    height: 60vh;
+}
+
+.course-content {
+    display: inline-block;
+    margin-top: 8%;
+    text-align: center;
+}
+
+.degree-content {
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    border: transparent;
+    margin-left: 50px;
+    padding: 25px 30px;
+    background-color: rgba(255, 213, 213, 0.5);
+}
+
+.degree-content h1 {
+    font-size: 25px;
+}
+
+.degree-content p {
+    font-size: 15px;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+
+/*----------------Campus section---------------*/
+
+.campus-content {
+    width: 90%;
+    margin-left: 10%;
+    margin-top: 8%;
+}
+
+.campus-pic {
+    display: inline-block;
+    width: 30%;
+}
+
+.campus-pic img {
+    display: inline-block;
+    width: 95%;
+    height: 80vh;
+    margin-left: 40px;
+    border-radius: 10px;
+}
+
+.campus-pic h3 {
+    position: absolute;
+    top: 260%;
+    left: 52%;
+    transform: translate(-50%, -55%);
+    color: #fff;
+    font-size: 26px;
+}
+
+
+/*---------------facilities-section----------------*/
+
+.facilities-content {
+    width: 90%;
+    margin-left: 8%;
+    margin-top: 6%;
+}
+
+.facilities-pic {
+    display: inline-block;
+    width: 30%;
+}
+
+.facilities-pic h1 {
+    font-size: 20px;
+    text-align: justify;
+    padding-left: 50px;
+    font-weight: 900;
+    margin-top: 18px;
+}
+
+.facilities-pic p {
+    font-size: 15px;
+    text-align: justify;
+    padding-left: 50px;
+    font-weight: 300;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+.facilities-content img {
+    width: 95%;
+    height: 50vh;
+    margin-left: 50px;
+    border-radius: 10px;
+}
+
+
+/*---------------About-section----------------*/
+
+.About-content {
+    margin-left: 10%;
+    margin-top: 6%;
+}
+
+.About-review {
+    display: inline-block;
+    width: 35%;
+    margin-left: 40px;
+    padding: 22px 30px;
+    background-color: rgba(255, 213, 213, 0.5);
+    border-radius: 5px;
+}
+
+.About-review img {
+    display: inline-block;
+    width: 40px;
+    height: 35px;
+    border-radius: 50px;
+    vertical-align: text-top;
+}
+
+.About-review p {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 200;
+    width: 80%;
+    vertical-align: text-top;
+    line-height: 1.6;
+    text-align: justify;
+    padding-left: 30px;
+}
+
+.About-review h1 {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: justify;
+    padding-left: 14%;
+    margin-top: 20px;
+}
+
+.About-review .About-rating {
+    padding-left: 14%;
+    margin-top: 20px;
+}
+
+.About-review a {
+    text-decoration: none;
+}
+
+.About-review a i {
+    color: rgb(254, 47, 47);
+}
+
+
+/*------------------contact-section-----------------*/
+
+.contact-section {
+    margin-top: 90px;
+    background-image: linear-gradient(rgba(2, 7, 44, 0.6), rgb(2, 7, 44, 0.6)), url(contact\ cover.jpg);
+    background-size: cover;
+    height: 70vh;
+    border-radius: 5px;
+}
+
+.contact-text {
+    position: absolute;
+    top: 515%;
+    left: 50%;
+}
+
+.contact-text h1 {
+    font-size: 40px;
+    line-height: 1.6;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+
+/*---------------------footer-section-------------*/
+
+footer {
+    margin: 150px 0;
+}
+
+.footer-content {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-content a:visited,
+.footer-content a:link {
+    text-decoration: none;
+    color: rgb(254, 47, 47);
+    margin-left: 20px;
+    transition: color 0.2s;
+}
+
+.footer-content a:hover,
+.footer-content a:active {
+    color: rgb(203, 203, 203);
+}
+
+.footer-section p {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 15px;
+}
+
+
+/*----------------contact-section----------------*/
+
+.map-section {
+    padding-left: 5%;
+}
+
+.map-content iframe {
+    border-radius: 5px;
+}
+
+.contact-detail {
+    padding-left: 8%;
+}
+
+.contact-detail h1 {
+    display: inline-block;
+}
+
+.contact-texts {
+    text-align: justify;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 30px;
+}
+
+.contact-container {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.contact-information {
+    margin-bottom: 20px;
+}
+
+.contact-information h1 {
+    font-size: 20px;
+    font-weight: 600;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+
+.contact-information p {
+    font-size: 15px;
+    margin-top: 10px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+}
+
+.icon {
+    display: inline-block;
+}
+
+.icon i {
+    vertical-align: middle;
+    font-size: 30px;
+    color: rgb(254, 47, 47);
+}
+
+.form-detail {
+    vertical-align: middle;
+}
+
+.form-detail,
+.form-detail form {
+    display: inline-block;
+}
+
+.form {
+    padding-top: 145px;
+}
+
+.form input,
+textarea {
+    display: block;
+    margin-left: 170%;
+    margin-bottom: 20px;
+    padding: 15px 15px;
+    width: 205%;
+    border: 1px solid rgb(191, 191, 191);
+    border-radius: 2px;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+    color: rgb(209, 209, 209);
+    word-spacing: 1px;
+    letter-spacing: 1px;
+}
+
+.form input:focus::placeholder,
+.form textarea:focus::placeholder {
+    color: transparent;
+}
+
+.form-btn {
+    top: 290%;
+    left: 64.7%;
+}
